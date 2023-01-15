@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug BlueBird",
+      "program": "${workspaceFolder:BlueBird}\\.build/debug/BlueBird",
+      "args": [],
+      "cwd": "${workspaceFolder:BlueBird}",
+      "preLaunchTask": "swift: Build Debug BlueBird"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release BlueBird",
+      "program": "${workspaceFolder:BlueBird}\\.build/release/BlueBird",
+      "args": [],
+      "cwd": "${workspaceFolder:BlueBird}",
+      "preLaunchTask": "swift: Build Release BlueBird"
+    }
+  ]
+}
