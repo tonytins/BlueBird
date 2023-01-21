@@ -23,7 +23,7 @@ jobs:
   cross-platform:
     strategy:
       matrix:
-        platforms: ["windows-latest", "macos-latest"]
+        platforms: ["windows-latest", "ubuntu-latest"]
     timeout-minutes: 15
     continue-on-error: true
     runs-on: ${{ matrix.platforms }}
